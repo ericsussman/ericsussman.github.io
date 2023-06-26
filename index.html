@@ -41,11 +41,11 @@
     <script type="text/javascript">
         $(function() {
             var params = {
-                "api_key": "{subscription key}",
+                "api_key": "fe14e29e73c3466f9aba8eee3c6e508a",
                 // Request parameters
                 "StopID": "1001195",
             };
-
+            
             $.ajax({
                 url: "https://api.wmata.com/NextBusService.svc/json/jPredictions?" + $.param(params),
                 type: "GET",
