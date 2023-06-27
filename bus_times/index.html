@@ -1,49 +1,33 @@
+<!DOCTYPE html>
 <html>
-    <head>
-      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    </head>
 
-  <body>
-      
-    <p> Input Bus Stop ID Here
-      </p>
-    <input type="number">
-    <p>Bus times... 
-      <span id='labelTag'> </span> 
-    </p>
-      
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PyScript Template</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
         - requests
         - pandas
         - json
+        - paths:
+            - /script.py
     </py-env>
-      
-    <py-config>
-        packages = [
-          "requests",
-          "numpy",
-          "pandas",
-          "json"
-        ]
-    </py-config>
+</head>
 
-    <py-script>
-        import requests
-        import pandas as pd
-        import json
+<body style="font-family:Times New Roman;margin-left:40px">
 
-        bus_stop = '1002241'
-        def get_busTimes(bus_stop):
-            URL = 'https://api.wmata.com/NextBusService.svc/json/jPredictions?StopID={}&api_key=fe14e29e73c3466f9aba8eee3c6e508a'.replace('{}',bus_stop)
-            data = json.loads(requests.get(URL).text)
-            df = pd.json_normalize(data,record_path =['Predictions'])
+    <br>
+    <p id=main_description class=text>
+        Hello, world.
+    </p>
 
-            stop = df.drop(columns=['DirectionNum','VehicleID','TripID'])
-    
-            return stop
+    <input type=number id=input_box name=input autocomplete=off placeholder="1002241">
+    <button type=button id=submit pys-onclick=submit_input>submit</button>
 
-        pyscript.write('labelTag',get_busTimes(bus_stop))
-    </py-script>
-  </body>
+    <py-script src=/script.py></py-script>
+</body>
+
 </html>
