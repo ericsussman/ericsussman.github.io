@@ -1,64 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <meta name="description" content="A page for Eric Sussman and friends">
-   <meta name="author" content="Devcrud">
-   <title>Eric Sussman Landing Page | Components</title>
-   <link rel="icon" href="assets/imgs/favicon.png" type="image/png">
-   <!-- font icons -->
-   <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-   <!-- Bootstrap + Steller  -->
-   <link rel="stylesheet" href="assets/css/johndoe.css">
+<!-- 2023-03-05 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eric Sussman</title>
+<meta name="author" content="Eric Sussman" />
+<meta name="description" content="bikes, hikes, and clean air." />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Eric Sussman</h1>
+</header><ul class="org-ul nav">
+<li><a href="index.html">About</a></li>
+<li><a href="bus_times/index.html">Bus Times</a></li>
+<li><a href="metro_times/index.html">Metro Times</a></li>
+<li><a href="https://github.com/ericsussman">Github</a></li>
+</ul>
 
-   <!-- main content -->
-   <div class="container">
 
-      <!-- About -->
-      <h3 class="mt-5">About Me</h3>
-        <p>
-            Hi there, my name is Eric and this is my website. Hopefully there will be content on here soon.
-        </p>
-       
-  <body>
-    
-    <p>Display the upcoming bus times</p>  
-     <form oninput="res.value=parseInt(a.value)+parseInt(b.value);">  
-        <label>Enter the bus station code.</label><br>  
-        <input type="number" name="a" value=""/><br>  
-        
-        Bus predictions for the station:<output name="res"></output>  
-     </form>  
-    <head>
-        <title>JSSample</title>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    </head>
-    <body>
+<p>
+Hi there, I'm Eric and hopefully this will be updated soon.
+</p>
 
-    <script type="text/javascript">
-        $(function() {
-            var params = {
-                "api_key": "fe14e29e73c3466f9aba8eee3c6e508a",
-                // Request parameters
-                "StopID": "1001195",
-            };
-            
-            $.ajax({
-                url: "https://api.wmata.com/NextBusService.svc/json/jPredictions?" + $.param(params),
-                type: "GET",
-            })
-            .done(function(data) {
-                alert("success");
-            })
-            .fail(function() {
-                alert("error");
-            });
-        });
-    </script>
+<p>
+I formerly worked for <a href="https://sonomatech.com/">Sonoma Technology</a> as an Air Quality Engineer.
+</p>
+</div>
+</div>
 
-  </body>
-  
+</body>
 </html>
