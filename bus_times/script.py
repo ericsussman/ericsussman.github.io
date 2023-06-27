@@ -1,15 +1,17 @@
-import requests
-import pandas as pd
-import json
+        import json
+        import requests
+        import pandas as pd
 
-bus_stop = input_box.select(".value")
-def get_busTimes(bus_stop):
-    URL = 'https://api.wmata.com/NextBusService.svc/json/jPredictions?StopID={}&api_key=fe14e29e73c3466f9aba8eee3c6e508a'.replace('{}',bus_stop)
-    data = json.loads(requests.get(URL).text)
-    df = pd.json_normalize(data,record_path =['Predictions'])
+        def get_busTimes(bus_stop):
+            URL = 'https://api.wmata.com/NextBusService.svc/json/jPredictions?StopID={}&api_key=___'.replace('{}',bus_stop)
+            data = json.loads(requests.get(URL).text)
+            df = pd.json_normalize(data,record_path =['Predictions'])
 
-    stop = df.drop(columns=['DirectionNum','VehicleID','TripID'])
+            stop = df.drop(columns=['DirectionNum','VehicleID','TripID'])
+        
+            stop = stop.to_html()
 
-    return stop.to_html()
+            return stop
 
-get_butTimes(bus_stop)
+        input_box = Element("input_box")
+        get_busTimes(input_box.value)

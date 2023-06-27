@@ -1,6 +1,6 @@
 // api url
 const api_url =
-      "https://api.wmata.com/NextBusService.svc/json/jPredictions?StopID=1002241&api_key=fe14e29e73c3466f9aba8eee3c6e508a";
+      "https://api.wmata.com/NextBusService.svc/json/jPredictions?StopID=1002241&api_key=____";
  
 // Defining async function
 async function getapi(url) {
