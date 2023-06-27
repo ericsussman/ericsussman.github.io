@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>JSSample</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</head>
-<body>
-
-<script type="text/javascript">
-    $(function() {
-        var params = {
-            "api_key": "fe14e29e73c3466f9aba8eee3c6e508a",
-            // Request parameters
-            "StopID": "1001195",
-        };
-      
-        $.ajax({
-            url: "https://api.wmata.com/NextBusService.svc/json/jPredictions?" + $.param(params),
-            type: "GET",
-        })
-        .done(function(data) {
-            alert("success");
-        })
-        .fail(function() {
-            alert("error");
-        });
-    });
-</script>
-</body>
+<html lang="en">
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Here a loader is created which
+             loads till response comes -->
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border"
+                 role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <h1>Registered Employees</h1>
+        <!-- table for showing data -->
+        <table id="employees"></table>
+    </body>
 </html>
