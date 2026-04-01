@@ -1,51 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Eric Sussman</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-    
-  <body class="max-w-screen-lg p-4 mx-auto">
-    <header class="flex flex-col md:flex-row items-center">
-      <main role="main">
-        <h1 class="text-center md:text-left text-3xl md:text-4xl font-extrabold">Eric Sussman</h1>
-        <article class="prose prose-lg mt-4">
-          <h2 class - "title">About</h2>
-          <p><img src="img/pastry.jpg" alt="Eating an almond croisant in Stockholm, Sweden" style="float: right;width:300px;height:300px;">
-            Hello! I’m an engineer who is passionate about improving the air quality and public health of at-risk populations through science and policy. My main focus is in air pollutant emissions modeling and control. You can usually find me outside, riding my bike or hiking.
-          </p>
-        </article>
-      </main>
-    </header>
-      
-    <nav class="mt-8 md:mx-8 prose">
-    <div id="outline-container-orgccd7d0e" class="outline-2">
-        <h2 class = "title">Resume / CV</h2>
-        <div class="outline-text-2" id="text-orgccd7d0e">
-            <p>
-                If you'd like to check out my professional experiences, <a href="resume/index.html">my resume</a> is saved here.
-                
-                You can also connect with me on <a href="https://www.linkedin.com/in/eric-sussman/">LinkedIn</a>.
-            </p>
-    
-        <h2 class = "title"> Quick Links </h2>
-            </header><ul class="org-ul nav">
-            <li><a href="bikes/index.html">Bikes</a></li>
-            <li><a href="books/index.html">Books</a></li>
-            <li><a href="hikes/index.html">Hikes</a></li>
-            <li><a href="outside/index.html">Get Outside</a></li>
-            <li><a href="https://github.com/ericsussman">Github</a></li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric | Air Quality Engineer & Photographer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .photo-card:hover img { transform: scale(1.05); transition: transform 0.5s ease; }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-6xl mx-auto">
+        <h1 class="text-xl font-bold tracking-tighter">Eric Sussman</h1>
+        <div class="space-x-8 text-sm font-medium text-zinc-500">
+            <a href="#work" class="hover:text-zinc-900 transition">Work</a>
+            <a href="#photography" class="hover:text-zinc-900 transition">Photography</a>
+            <a href="#accolades" class="hover:text-zinc-900 transition">Accolades</a>
+        </div>
     </nav>
-  </body>
-</html>
-    
-<hr/>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p>Last&nbsp;updated:&nbsp;2023-06-27</p>
-</div>
+
+    <header class="max-w-6xl mx-auto px-8 py-20">
+        <h2 class="text-5xl md:text-7xl font-semibold leading-tight tracking-tight mb-6">
+            Capturing emissions <br> & exposures.
+        </h2>
+        <p class="text-zinc-500 text-lg max-w-xl">
+            I’m an air quality engineer who is passionate about improving air quality and climate through science and policy. My main focus is in transportation air pollutant emissions modeling and emissions control measures. You can usually find me outside: riding my bike, taking photos, or hiking.
+        </p>
+    </header>
+
+<section id="work" class="max-w-6xl mx-auto px-8 py-12">
+    <h3 class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-8">Selected Projects</h3>
+    <div class="grid md:grid-cols-2 gap-12">
+        
+        <div class="group cursor-pointer">
+            <a href="https://theicct.org/wp-content/uploads/2023/05/state-level-ldv-emissions-reg-fs-may23.pdf" target="_blank">
+                <div class="bg-zinc-200 aspect-video rounded-lg mb-4 overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="img/projects/acc.jpg" alt="Policy Impact Modeling" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+            <h4 class="text-xl font-semibold">Benefits of adopting California Advanced Clean Cars II regulations under Clean Air Act Section 177</h4>
+            <p class="text-zinc-500">Analysis of the air quality and public health implications of adopting California ACCII.</p>
+        </div>
+
+        <div class="group cursor-pointer">
+            <a href="https://www.epa.gov/state-and-local-transportation/estimating-emission-reductions-travel-efficiency-strategies#fact-sheets" target="_blank">
+                <div class="bg-zinc-200 aspect-video rounded-lg mb-4 overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="img/projects/tcm.jpg" alt="Transportation Control Measures" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+            <h4 class="text-xl font-semibold">Travel Efficiency Fact Sheets</h4>
+            <p class="text-zinc-500">Fact sheets about specific travel efficiency strategies, implementation approaches, and implementation examples.</p>
+        </div>
+
+        <div class="group cursor-pointer">
+            <a href="https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P101AKJW.pdf" target="_blank">
+                <div class="bg-zinc-200 aspect-video rounded-lg mb-4 overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">
+                    <img src="img/projects/ghg.jpg" alt="Greenhouse Gas Guidance" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+            <h4 class="text-xl font-semibold">MOVES Greenhouse Gas Guidance</h4>
+            <p class="text-zinc-500">How to quantify transportation greenhouse gas emissions.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="photography" class="bg-zinc-900 text-white py-24">
+    <div class="max-w-6xl mx-auto px-8">
+        <h3 class="text-xs uppercase tracking-widest text-zinc-500 font-bold mb-8">Photography</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                <img src="img/bled.jpg" alt="Lake Bled" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+            
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                <img src="img/flower.jpg" alt="Magnolia" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                <img src="img/metro.jpg" alt="Metro" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                <img src="img/cherry_bee.jpg" alt="Cherry Blossom" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                 <img src="img/neutrino.jpg" alt="Bike" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                 <img src="img/raindrop.jpg" alt="Raindrop" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                 <img src="img/skater.jpg" alt="Skater" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+            <div class="photo-card overflow-hidden rounded-md bg-zinc-800 aspect-[6/4]">
+                 <img src="img/cherry_blossom.jpg" alt="Cherry Blossom" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="accolades" class="max-w-6xl mx-auto px-8 py-24">
+        <h3 class="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-12">Photography Accolades & Recognition</h3>
+        <div class="divide-y divide-zinc-200">
+            <div class="py-6 flex flex-col md:flex-row md:items-center justify-between">
+                <span class="text-zinc-400 tabular-nums">2025</span>
+                <span class="text-xl font-medium">It’s a SNAP Baltimore Heritage Area Photo Contest</span>
+                <span class="text-zinc-500 italic text-sm">First Place</span>
+            </div>
+            <div class="py-6 flex flex-col md:flex-row md:items-center justify-between">
+                <span class="text-zinc-400 tabular-nums">2025</span>
+                <span class="text-xl font-medium">Sakura & Friendship Photo Contest and Exhibition</span>
+                <span class="text-zinc-500 italic text-sm">Judge's Honorable Mention</span>
+            </div>
+            <div class="py-6 flex flex-col md:flex-row md:items-center justify-between">
+                <span class="text-zinc-400 tabular-nums">2026</span>
+                <span class="text-xl font-medium">Dupont Underground Blossom Fever</span>
+                <span class="text-zinc-500 italic text-sm">Exhibitor</span>
+            </div>
+            <div class="py-6 flex flex-col md:flex-row md:items-center justify-between">
+                <span class="text-zinc-400 tabular-nums">2026</span>
+                <span class="text-xl font-medium">It’s a SNAP Baltimore Heritage Area Photo Contest</span>
+                <span class="text-zinc-500 italic text-sm">Honorable Mention</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-8 py-12 border-t border-zinc-100 flex justify-between text-xs text-zinc-400 uppercase tracking-widest">
+        <p>© 2026 Eric Sussman</p>
+        <div class="space-x-4">
+            <a href="resume/index.html" class="hover:text-zinc-900">Resume</a>  
+            <a href="https://github.com/ericsussman/" class="hover:text-zinc-900">GitHub</a>
+            <a href="https://www.linkedin.com/in/eric-sussman/" class="hover:text-zinc-900">LinkedIn</a>
+        </div>
+    </footer>
+
 </body>
 </html>
